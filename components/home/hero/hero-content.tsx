@@ -1,24 +1,31 @@
 import { HeroButtons } from "./hero-buttons";
+import { HeroFeatures } from "./hero-features";
 
 export function HeroContent() {
   return (
     <div className="max-w-xl">
-      <span className="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
-        Premium Nigerian FMCG Brand
-      </span>
+      <p className="font-semibold uppercase tracking-[0.3em] text-primary">
+        Premium Quality
+      </p>
 
-      <h1 className="mt-6 font-[family-name:var(--font-poppins)] text-5xl font-bold leading-tight text-foreground lg:text-6xl">
-        Quality Products
+      <h1 className="mt-5 font-heading text-6xl font-extrabold leading-none">
+        Premium Quality.
         <br />
-        For Every Home.
+        <span className="text-primary">
+          Everyday Inspiration.
+        </span>
       </h1>
 
       <p className="mt-6 text-lg leading-8 text-muted-foreground">
-        Discover premium food, household essentials, and stationery
-        products crafted with quality, innovation, and African excellence.
+        High-quality food, household and stationery
+        products made for every home.
+        Made in Nigeria.
+        Made to inspire.
       </p>
 
       <HeroButtons />
+
+      <HeroFeatures />
     </div>
   );
 }
